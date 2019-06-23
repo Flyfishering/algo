@@ -1,4 +1,18 @@
 # 数据结构和算法必知必会的50个代码实现
+
+
+## 注释说明
+- 先完成 c 语言代码的注释，大家可以先看 .c 文件的代码
+- 注释顺序 为：c, oc, swift, python, java 
+- 我比较熟悉 OC ，了解一点点 c 与 swift ，其他语言都是零基础，所以注释写的会比较详细
+
+
+---
+
+> 下面是原作者的 readme
+
+----
+----
 ### 微信搜索我的公众号“小争哥”，或者微信扫描下面二维码, 获取更多压箱底的干货分享
 ### 前Google工程师，5万+人跟着学的《数据结构和算法之美》专栏作者
 ![t2](https://github.com/wangzheng0822/markdownphotos/blob/master/pics/qrcode_for_gh_9b0e7afdff20_258.jpg)
