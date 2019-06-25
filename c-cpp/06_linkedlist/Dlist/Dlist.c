@@ -205,7 +205,6 @@ int main()
 	dlist_dump(&dlist);
 
 
-
 	while(dlist.size > 0)
 	{
 	    pNode = dlist_remove_tail(&dlist);
