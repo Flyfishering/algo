@@ -8,6 +8,7 @@
 #include<stdio.h>
 #include <stdbool.h>
 #include "./Dlist.h"
+#include<stdlib.h>
 
 
 
@@ -192,17 +193,25 @@ int main()
 	{
 		printf("\r\n remove %d",pNode->data);
 	}
-	dlist_insert_head(&dlist,pNode,4);
-	dlist_dump(&dlist);
-
+    dlist_insert_head(&dlist,pNode,4);
+    printf("\r\n ----insert 4 -----");
+    dlist_dump(&dlist);
+    
     Lru_dlist(&dlist,5);
-	dlist_dump(&dlist);
+    printf("\r\n ----insert 5 -----");
+    dlist_dump(&dlist);
+    
     Lru_dlist(&dlist,6);
-	dlist_dump(&dlist);
+    printf("\r\n ----insert 6 -----");
+    dlist_dump(&dlist);
+    
     Lru_dlist(&dlist,7);
-	dlist_dump(&dlist);
+    printf("\r\n ----insert 7 -----");
+    dlist_dump(&dlist);
+    
     Lru_dlist(&dlist,5);
-	dlist_dump(&dlist);
+    printf("\r\n ----insert 5 -----");
+    dlist_dump(&dlist);
 
 
 	while(dlist.size > 0)
@@ -211,9 +220,9 @@ int main()
 	    if(pNode != NULL)
 	    { 
 		    printf("\r\n remove %d",pNode->data);
-	    	free (pNode);
+	    	free(pNode);
     	}
 	}
-
+    printf("\n-----end-----\n");
 	return 0;
 }

@@ -6,7 +6,9 @@
  > Desc:    
  ************************************************************************/
 #include<stdio.h>
-
+/**
+ *  双向链表
+ */
 typedef struct DlistNode          //双向链表中每一个节点
 {				  	
 	struct DlistNode *prev;   //节点前项指针
