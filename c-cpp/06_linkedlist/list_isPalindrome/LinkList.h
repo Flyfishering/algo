@@ -9,7 +9,7 @@ typedef struct LNode
 	ElemType data;
 	struct LNode*next;
 }LinkList;
-
+// *& 这是个啥？？
 void CreateListHead(LinkList *&L,ElemType a[],int n);
 void CreateListTail(LinkList *&L,ElemType a[],int n);
 void InitList(LinkList *&L);
