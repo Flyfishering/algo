@@ -1,5 +1,6 @@
 #include"LinkList.h"
-char array1[]= {'a','b','c','b','a'};
+//char array1[]= {'a','b','c','b','a'};
+char array1[]= {'1','2','3','4','5'};
 bool isPalindrome(LinkList * list,int length);
 int main()
 {
@@ -7,8 +8,16 @@ int main()
 
 	int length = sizeof(array1)/sizeof(array1[0]);
 	InitList(list);
-	CreateListTail(list,array1,length);//用尾插法创建一个单链表
-	if(isPalindrome(list,length))
+    
+//    CreateListTail(list,array1,length);
+    //  a  b  c  b  a 
+    //  1  2  3  4  5
+//    ShowList(list);
+    CreateListHead(list, array1, length);
+    //a  b  c  b  a 
+    // 5  4  3  2  1 
+    ShowList(list);
+    if(isPalindrome(list,length))
 		printf("isPalindrome\n");
 	else
 		printf("isNotPalindrome\n");
